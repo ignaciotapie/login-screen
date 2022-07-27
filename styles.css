@@ -1,0 +1,39 @@
+@font-face {
+    font-family: 'Norse Bold';
+    src: url(/fonts/Norse-Bold.otf);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz@8..144&display=swap');
+
+body {
+    background-color: rgb(232, 231, 231);
+    display: flex;
+    flex:1 1 auto;
+    width: 100%;
+    height: 100vh;
+    font-family: 'Roboto Flex', sans-serif;
+}
+
+h1{
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin: 2rem;
+}
+
+.content{
+    display:flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content:space-around;
+}
+
+#plant{
+    max-width: 100%;
+    height: auto;
+}
+
+.forms{
+    background-color: white;
+
+    box-shadow: 100px;
+}
