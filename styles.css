@@ -42,11 +42,12 @@ h1{
     display:flex;
     flex: 0 0 auto;
     position:relative;
+    min-width: fit-content;
+    min-height: fit-content;
 }
 
 #plant{
-    width: 100%;
-    min-width: 8rem;
+    height: 100%;
 }
 
 .transparent-icon{
@@ -71,6 +72,6 @@ h1{
 }
 
 #odin-logo{
-    width: 16%;
+    width: 6rem;
     margin: 1rem;
 }
