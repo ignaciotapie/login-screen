@@ -3,14 +3,11 @@
     src: url(https://cdn.statically.io/gh/TheOdinProject/theodinproject/efdc2888072f409e687d31dc580595dbe4fe0ff4/app/assets/fonts/Norse-Bold.otf);
 }
 
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz@8..144&display=swap');
-
 body {
     background-color: rgb(232, 231, 231);
     display: flex;
     flex:1 1 auto;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     font-family: 'Roboto Flex', sans-serif;
     color: rgb(28, 27, 27);
@@ -21,21 +18,32 @@ body {
 
 h1{
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     margin: var(--default-margin);
+}
+
+.describing-text{
+    width: 90%;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
 }
 
 .content{
     display:flex;
-    flex-direction: column;
     flex: 1;
+    flex-direction: column;
     justify-content:center;
 }
 
 .forms{
     background-color: white;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
     padding: 1rem 2rem;
     box-shadow: 0px 4px 8px #b1aeae;
+
+    justify-content: space-evenly;
 }
 
 .logo{
@@ -62,6 +70,8 @@ h1{
     flex:1;
     justify-content: center;
     align-items:center;
+
+    overflow: hidden;
 }
 
 .logo-title{
@@ -74,4 +84,54 @@ h1{
 #odin-logo{
     width: 6rem;
     margin: 1rem;
+}
+
+.create-account-section{
+    margin: var(--default-margin);
+    flex-direction: column;
+    height: 1rem;
+}
+
+.button-create-account{
+    font-size: large;
+    font-weight: bolder;
+
+    width: 14rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+
+    background-color: #596D48;
+    color: white;
+    border: 0;
+    border-radius: 9px;
+    box-shadow: 0px 4px 8px #b1aeae;
+}
+
+
+p{
+    font-weight: 550;
+}
+
+a{
+    text-decoration: none;
+    color: #596D48;
+}
+
+.inputs{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.inputs > div{
+    width: 20rem;
+    display:flex;
+    flex: 0 1 auto;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.inputs > div > label{
+    font-family: 'Open Sans';
+    font-weight: 600;
 }
