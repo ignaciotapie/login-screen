@@ -40,7 +40,7 @@ h1{
     display: flex;
     flex: 0 0 auto;
     flex-direction: column;
-    padding: 1rem 2rem;
+    padding: 1.5rem 2rem;
     box-shadow: 0px 4px 8px #b1aeae;
 
     justify-content: space-evenly;
@@ -121,6 +121,26 @@ a{
     display: flex;
     flex-wrap: wrap;
     gap: 1.5rem;
+}
+
+input{
+    height: 1.5rem;
+    border-radius: 6px;
+    border-width: 0.17rem;
+    border-color: rgba(0, 0, 0, 0.5);
+}
+
+input:focus {
+    outline-color: rgb(0, 162, 255);
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
+}
+
+.outline-wrong{
+    border-color: red;
+}
+
+.outline-correct{
+    border-color: green;
 }
 
 .inputs > div{
